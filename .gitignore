@@ -1,52 +1,31 @@
-# Prerequisites
-*.d
+# Below is done to ignore extensionless files (output of compilation)
+
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+# Unignore makefiles
+!**/makefile
+
+# MacOS file explorer attribute file
+**/.DS_Store
 
 # Object files
-*.o
-*.ko
-*.obj
-*.elf
+**/*.o
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Out files
+**/*.out
 
-# Precompiled Headers
-*.gch
-*.pch
+# Exe files
+**/*.exe
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Stackdump
+**/*.stackdump
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# VSCode stuff
+**/.vscode
